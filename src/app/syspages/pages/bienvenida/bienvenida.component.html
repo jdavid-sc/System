@@ -1,0 +1,23 @@
+<div class="col-3">
+    <button class="btn btn-success" (click)="openModel()">Open Model</button>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" (click)="CloseModel()" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input type="number" matInput placeholder="Ex. Pizza">
+            </mat-form-field>            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" (click)="CloseModel()" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>

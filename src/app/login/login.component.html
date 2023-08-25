@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="contenedor">
+    <div class="formulario">
+      <h2>Administrador de proyectos</h2>
+
+      <form id="loginform" autocomplete="off" (ngSubmit)="login(formularioLogin)" #formularioLogin="ngForm">
+        <input placeholder="Usuario"
+                type="text" pInputText
+                ngModel
+                name="usuario"
+                class="campo-input"
+                required>
+        <span class="form-text text-danger"
+                *ngIf="formularioLogin.controls['usuario']?.status == 'INVALID' &&
+                        formularioLogin.controls['usuario'].touched"> El correo es obligatorio </span>
+
+        <input placeholder="Contraseña" type="password" pInputText ngModel name="password" class="campo-input"
+                required>
+        <span class="form-text text-danger"
+                *ngIf="formularioLogin.controls['password']?.invalid &&
+                        formularioLogin.controls['password'].touched"> El correo es obligatorio </span>
+        <p></p>
+        <button type="submit" mat-raised-button color="primary" [disabled]="formularioLogin.invalid" >Primary</button>
+      </form>
+
+    </div>
+
+  </div>
+
+

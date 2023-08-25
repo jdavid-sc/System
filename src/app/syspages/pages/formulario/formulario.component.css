@@ -1,0 +1,45 @@
+.container-fluid {
+  background-color:rgb(152, 220, 219);
+  height: 100vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+#contenedor-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: bold;
+}
+
+h6 {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.select {
+  margin-top: 10px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-weight: bold;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+}
+.error-message {
+  color: red;
+}
